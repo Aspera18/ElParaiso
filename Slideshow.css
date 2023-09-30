@@ -5,7 +5,7 @@
   }
 .container {
     width: 400px;
-    position: 250px;
+    position: absolute;
     transform: translate(-50%,-50%);
     top: 350px;
     left: 250px;
