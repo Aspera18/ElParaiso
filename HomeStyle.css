@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
 }
 nav {
-  width: 100%;
+  width: auto;
   height: 100px;
   background-color: #151414;
   display: flex;
@@ -47,7 +47,7 @@ nav ul li a{
 }
 .divimage2 {
   height: 40px;
-  width: 40px;
+  width: auto;
   margin-left: 1325px;
   margin-top: -40px;
  }
