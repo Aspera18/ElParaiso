@@ -51,5 +51,45 @@ nav ul li a{
   margin-left: 1325px;
   margin-top: -40px;
  }
+ .divimage3 { 
+  height: 40px;
+  width: 40px;
+  margin-top: 410px;
+ }
+ .divimage4 {
+  height: 40px;
+  width: auto;
+  margin-left: 1325px;
+  margin-top: -38px;
+ }
+.textcontainer1 {
+  color: #f3cf73;
+  font-size: xx-large;
+  width: fit-content;
+  height: 70px;
+  left: 470px;
+  top: 135px;
+  position: absolute;
+}
+
+.textcontainer2 {
+  color: #f3cf73;
+  font-size: 30px;
+  width: fit-content;
+  height: 30px;
+  left: 515px;
+  top: 168px;
+  position: absolute;
+}
+.textcontainer3 {
+  color: #f3cf73;
+  font-size: 30px;
+  width: fit-content;
+  height: 250px;
+  left: 470px;
+  top: 200px;
+  position: absolute;
+  margin-right: 50px;
+}
 
 
