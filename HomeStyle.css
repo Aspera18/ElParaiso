@@ -49,20 +49,17 @@ position: absolute;
  width: 40px;
 }
 .divimage2 {
-  position: absolute;
   height: 40px;
   width: auto;
   margin-left: 1325px;
   margin-top: -40px;
  }
  .divimage3 { 
-   position: absolute;
   height: 40px;
   width: 40px;
   margin-top: 410px;
  }
- .divimage4 {
-   position: absolute;
+ .divimage4 { 
   height: 40px;
   width: auto;
   margin-left: 1325px;
