@@ -44,25 +44,32 @@ nav ul li a{
   text-decoration: none;
 }
 .divimage1 {
+  position: absolute;
  height: 40px;
  width: 40px;
+left: 0px;
+ top: 15%;
 }
 .divimage2 {
+  position: absolute;
   height: 40px;
   width: auto;
-  margin-left: 1325px;
-  margin-top: -40px;
+  right: 0px;
+  top: 15%;
  }
  .divimage3 { 
+  position: absolute;
   height: 40px;
   width: 40px;
-  margin-top: 410px;
+  left: 0px;
+  bottom: 7%;
  }
  .divimage4 { 
+     position: absolute;
   height: 40px;
   width: auto;
-  margin-left: 1325px;
-  margin-top: -38px;
+  right: 0px;
+  bottom: 7%;
  }
 .textcontainer1 {
   color: #f3cf73;
