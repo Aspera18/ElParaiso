@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Paraiso De Fleur</title>
+    <link rel="stylesheet" href="reservation-style.css">
+</head>
+<body>
+    <nav>
+        <h2>El Paraiso De Fleur</h2>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="Menus.html">Menus</a></li>
+            <li><a href="Reservations.html">Reservations</a></li>
+            <li><a href="ContactUs.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <img src="bggoldring.png" class="corner-image top-left">
+        <img src="bggoldring.png" class="corner-image top-right">
+        <img src="bggoldring.png" class="corner-image bottom-left">
+        <img src="bggoldring.png" class="corner-image bottom-right">
+
+        <div class="input-container">
+            <input type="text" placeholder="Name">
+            <input type="age" placeholder="Age">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Contact Number">
+            <input type="mess" placeholder="Reservation For">
+            <input type="text" placeholder="Cuisine Reservation">
+            <input type="date" placeholder="Date">
+            <input type="time" placeholder="Time">
+        </div>
+        <div class="center">
+            <h2>Select A Payment Method for Downpayment</h2>
+            <img src="MasterCard.png" width="154">
+            <img src="Visa.png" width="154">
+            <img src="UnionPay1.png" width="100">
+            <img src="AmericanExpress1.png" width="164">
+        </div>
+        <div class="modal" id="paymentModal">
+            <div class="modal-content">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Name on Card">
+                <input type="text" placeholder="Expiration Date">
+                <input type="text" placeholder="Security Code">
+                <p>50% downpayment</p>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="basket">
+                <h2>Basket</h2>
+                   <div class="col">
+                   <div class="col-1">
+                        <p style="font-weight: 200; font-size: 1.1rem; margin-top: -10px;">Ricotta and Roasted Tomato Bruschetta with Pancetta</p>
+                        <p>Ratatouille</p>
+                        <p>Bacon Parmesan Carbonara</p>
+                        <p>Strawberry Gelato</p>
+                        <p>Aperol Spritz</p>
+                    </div>
+                    <div class="col-2">
+                        <p style="margin-top: -22px;">4 &nbsp;&nbsp;&nbsp; $80.00</p>
+                        <p>2 &nbsp;&nbsp;&nbsp; $120.00</p>
+                        <p style="margin-top: 10px;">2 &nbsp;&nbsp;&nbsp; $150.00</p>
+                        <p style="margin-top: 9px;">4 &nbsp;&nbsp;&nbsp; $40.00</p>
+                        <p style="margin-top: 7px;">3 &nbsp;&nbsp;&nbsp; $30.00</p>
+                    </div>
+                    </div>
+                <p style="float: right; margin: 0 4.4rem; font-size: 1.8rem; margin-top: -12px;">Total: &nbsp; $1,100.00</p>
+            </div>
+            <button><a href="Receipt.html">Send</a></button>
+        </div>
+    </div>
+
+    <footer>
+        All Rights Reserved. TM ® & COPYRIGHT © 2023 by El Paraiso De Fleur
+    </footer>
+
+    <script>
+        var modal = document.getElementById('paymentModal');
+var images = document.querySelectorAll('.center img');
+
+function showModal() {
+    modal.style.display = 'block';
+}
+
+function closeModalFunction() {
+    modal.style.display = 'none';
+}
+
+images.forEach(function (image) {
+    image.addEventListener('click', showModal);
+});
+
+modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        closeModalFunction();
+    }
+});
+var sendButton = document.getElementById('sendButton');
+sendButton.addEventListener('click', function() {
+    var cardNumber = document.querySelector('#paymentModal input:nth-child(1)').value;
+    var nameOnCard = document.querySelector('#paymentModal input:nth-child(2)').value;
+    var expirationDate = document.querySelector('#paymentModal input:nth-child(3)').value;
+    var securityCode = document.querySelector('#paymentModal input:nth-child(4)').value;
+
+    closeModalFunction();
+});
+    </script>
+</body>
+</html>
